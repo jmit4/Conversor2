@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <Button
+        android:id="@+id/btnConvertir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="92dp"
+        android:text="Convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset2"
+        android:layout_width="113dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/btnConvertir2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnConvertir2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:text="Kilogramo (kg):"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvKilo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKilo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="275dp"
+        android:text="---"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Libra (lb):"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLibra"
+        app:layout_constraintEnd_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/tvLibra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:text="---"
+        app:layout_constraintStart_toStartOf="@+id/tvKilo"
+        app:layout_constraintTop_toBottomOf="@+id/tvKilo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:text="Onza (oz):"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOnza"
+        app:layout_constraintEnd_toStartOf="@+id/tvOnza" />
+
+    <TextView
+        android:id="@+id/tvOnza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="1dp"
+        android:text="---"
+        app:layout_constraintEnd_toEndOf="@+id/tvLibra"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibra" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="21dp"
+        android:text="Cantidad: "
+        app:layout_constraintBottom_toBottomOf="@+id/etCantidad2"
+        app:layout_constraintEnd_toStartOf="@+id/etCantidad2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etCantidad2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etCantidad2" />
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Peso"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Peso" />
+
+    <EditText
+        android:id="@+id/etCantidad2"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="121dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
